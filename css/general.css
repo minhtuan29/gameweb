@@ -1,0 +1,81 @@
+/* ===== Reset CSS ===== */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    font-size: 15px;
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    outline: none;
+}
+
+/* ===== Variables ===== */
+:root {
+    --dark-prim: #000;
+    --light-prim: #fff;
+    --lighter-grey: #ddd;
+    --light-grey: #ccc;
+    --dark-grey: #333;
+    --red-color: #f44336;
+    --green-color: #009688;
+    --blue-color: #2196f3;
+}
+
+/* ===== Common ===== */
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col-full {
+    display: block;
+    width: 100%;
+}
+
+.col {
+    padding: 0 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.three-col {
+    width: 33.33333%;
+}
+
+.two-col {
+    width: 50%;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.pull-right {
+    float: right;
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+
+.mt-16 {
+    margin-top: 16px;
+}

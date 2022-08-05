@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/general.css">
+    <title>Document</title>
+</head>
+
+<style>
+
+
+    body{
+        background-color: dimgray;
+        font-size: 1.2em;
+    }
+
+    a{
+        text-decoration: none;
+        color: rgb(199, 199, 199);
+    }
+
+    a:hover{
+        color: white;
+    }
+
+    header{
+        z-index: 100;
+        background-color: rgb(42, 42, 42);
+        width: 100%;
+        padding: 0 24px;
+
+        /* dùng để trượt header */
+        position: fixed;
+
+        height: 3.5em;
+
+        /* dùng để bố trí theo hàng ngang + bố cục riêng */
+        display: flex;
+
+        /* dùng để bố cục trung tâm 
+        - vì đang là flex ngang
+         nên align-items cho padding top và padding bot bằng nhau */
+        align-items: center;
+        justify-content: space-between;   
+    }
+
+    #searchInput{
+        height: 2.2em;
+        width: 15em;
+        border-radius: .8em;
+        font-size: 1em;
+        padding-left: 2.2em;
+        border: none;
+        background: rgb(212, 212, 212);
+        background-image: url("/photos/search-3076.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: 0.2s ease;
+    }
+
+    #searchInput:focus{
+        background-color: white;
+        transition: 0.2s ease;
+    }
+
+    #btnGetItNow{
+        background: url('/svg/HILLBLU_button_background.svg') no-repeat; 
+        width: 8em; height: 3.5em;
+        background-position: center;
+        background-size: contain;
+        border: none;
+        color: white;
+        font-weight: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-shadow: black 2px -2px 6px;
+    }
+
+    #btnGetItNow:hover{
+        text-decoration: underline;
+        text-shadow: black 4px 0px 10px;
+    }
+    
+    #menuBar{
+        padding-top: 4em;
+        background-color: rgb(42, 42, 42);
+        width: 15em;
+        height: 100%;
+        position: fixed;
+        left: 0px;
+    }
+
+
+    nav{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav *{
+        text-align: center;
+        padding: 1em;
+    }
+
+    nav *:hover{
+        background-color: cornflowerblue;
+        transition: 0.1s ease;
+     
+    }
+
+   
+
+
+
+</style>
+
+<body>
+
+    <header>
+
+        <img src="/photos/pokemon.png" style="width:6em; height:2em">
+
+     
+
+        <input type="text" id="searchInput">
+
+
+        <button id="btnGetItNow">
+            GET IT <br>NOW!!
+        </button>
+
+
+        <a> Login</a>
+        <a> Sign Up</a>
+    
+    </header>
+
+    <div id="menuBar">
+
+        <nav>
+            <a href="#">MOBA</a> 
+            <a href="#">Adventure</a> 
+            <a href="#">RPG</a> 
+            <a href="#">Tower Defense</a>
+            <a href="#">Racing</a>
+            <a href="#">Team Sport</a>
+            <a href="#">Casual</a>
+
+            
+
+
+        </nav>
+
+    </div>
+
+
+
+   
+    
+
+
+</body>
+
+
+
+</html>
