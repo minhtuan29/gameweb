@@ -14,7 +14,7 @@
 
     body{
         background-color: dimgray;
-        font-size: 1.2em;
+        font-size: 1em;
     }
 
     a{
@@ -32,10 +32,10 @@
         width: 100%;
         padding: 0 24px;
 
-        /* dùng để trượt header */
+     
         position: fixed;
 
-        height: 3.5em;
+        height: 3.2em;
 
         /* dùng để bố trí theo hàng ngang + bố cục riêng */
         display: flex;
@@ -44,12 +44,16 @@
         - vì đang là flex ngang
          nên align-items cho padding top và padding bot bằng nhau */
         align-items: center;
+
+        /* tùy chọn giãn cách */
         justify-content: space-between;   
+
+        position: relative;
     }
 
     #searchInput{
         height: 2.2em;
-        width: 15em;
+        width: 12em;
         border-radius: .8em;
         font-size: 1em;
         padding-left: 2.2em;
@@ -64,11 +68,12 @@
     #searchInput:focus{
         background-color: white;
         transition: 0.2s ease;
+        width: 22em;
     }
 
     #btnGetItNow{
         background: url('/svg/HILLBLU_button_background.svg') no-repeat; 
-        width: 8em; height: 3.5em;
+        width: 7em; height: 2.8em;
         background-position: center;
         background-size: contain;
         border: none;
@@ -76,17 +81,19 @@
         font-weight: bold;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         text-shadow: black 2px -2px 6px;
+        font-size: .8em;
     }
 
     #btnGetItNow:hover{
         text-decoration: underline;
         text-shadow: black 4px 0px 10px;
+        font-size: .9em;
     }
     
     #menuBar{
         padding-top: 4em;
         background-color: rgb(42, 42, 42);
-        width: 15em;
+        width: 12em;
         height: 100%;
         position: fixed;
         left: 0px;
@@ -120,20 +127,21 @@
 
     <header>
 
-        <img src="/photos/pokemon.png" style="width:6em; height:2em">
+        <img src="/photos/pokemon.png" style="width:6em; height:2em; position: absolute; left: 3%;">
 
      
 
-        <input type="text" id="searchInput">
+        <input type="text" id="searchInput" style="position: absolute; left: 35%">
 
 
-        <button id="btnGetItNow">
+        <button id="btnGetItNow" style="position: absolute; right: 20%">
             GET IT <br>NOW!!
         </button>
 
 
-        <a> Login</a>
-        <a> Sign Up</a>
+        <a  style="position: absolute; right: 2%"> Login</a>
+
+        <a  style="position: absolute; right: 6%"> Sign Up</a>
     
     </header>
 
