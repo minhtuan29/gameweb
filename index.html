@@ -2,31 +2,31 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/general.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/general.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
     <title>Document</title>
 </head>
 
 <style>
-
-
-    body{
+    body {
         background-color: rgb(26, 26, 26);
         font-size: 20px;
     }
 
-    a{
+    a {
         text-decoration: none;
         color: rgb(199, 199, 199);
     }
 
-    a:hover{
+    a:hover {
         color: white;
     }
 
-    header{
+    header {
         z-index: 100;
         background-color: rgb(42, 42, 42);
         width: 100%;
@@ -34,7 +34,6 @@
         position: fixed;
 
         height: 3.6em;
-
 
         /* dùng để bố trí theo hàng ngang + bố cục riêng */
         display: flex;
@@ -44,10 +43,10 @@
         align-items: center;
     }
 
-    #searchInput{
+    #searchInput {
         height: 2.2em;
         width: 12em;
-        border-radius: .8em;
+        border-radius: 0.8em;
         font-size: 1em;
         padding-left: 2.2em;
         border: none;
@@ -58,32 +57,33 @@
         transition: 0.2s ease;
     }
 
-    #searchInput:focus{
+    #searchInput:focus {
         background-color: white;
         transition: 0.2s ease;
         width: 22em;
     }
 
-    #btnGetItNow{
-        background: url('/svg/HILLBLU_button_background.svg') no-repeat; 
-        width: 7em; height: 2.8em;
+    #btnGetItNow {
+        background: url("/svg/HILLBLU_button_background.svg") no-repeat;
+        width: 7em;
+        height: 2.8em;
         background-position: center;
         background-size: contain;
         border: none;
         color: white;
         font-weight: bold;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
         text-shadow: black 2px -2px 6px;
-        font-size: .8em;
+        font-size: 0.8em;
     }
 
-    #btnGetItNow:hover{
+    #btnGetItNow:hover {
         text-decoration: underline;
         text-shadow: black 4px 0px 10px;
-        font-size: .9em;
+        font-size: 0.9em;
     }
-    
-    #sidebar{
+
+    #sidebar {
         padding-top: 4em;
         background-color: rgb(51, 51, 51);
         width: 12em;
@@ -92,54 +92,76 @@
         left: 0px;
     }
 
-
-    nav{
+    nav {
         width: 100%;
         display: flex;
         flex-direction: column;
     }
 
-    nav *{
+    nav * {
         text-align: center;
         padding: 1em;
     }
 
-    nav *:hover{
+    nav *:hover {
         background-color: cornflowerblue;
         transition: 0.1s ease;
-     
     }
 
-    #mainContent{
+    #mainContent {
         padding-top: 3.6em;
         margin-left: 13em;
     }
 
 
+    .glider-contain {
+        width: 70%;
+    }
 
+    .glider div img {
+        max-height: 600px;
+        width: max-content;
+    }
+
+    .glider div {
+        text-align: center;
+    }
+
+    button.glider-next,
+    button.glider-prev {
+        margin: 1.2em;
+        text-shadow: black 2px 0px 3px;
+        color: white;
+        font-size: 3.5em;
+    }
+
+    #dots {
+
+        position: absolute;
+        left: 50%;
+        bottom: 5%;
+    }
 </style>
 
 <body>
-
     <header>
-        <img src="/photos/pokemon.png" style="width:6em; height:2em; position: absolute; left: 3%;">
-        <input type="text" id="searchInput" style="position: absolute; left: 35%">
+        <img src="/photos/pokemon.png" style="width: 6em; height: 2em; position: absolute; left: 3%" />
+        <input type="text" id="searchInput" style="position: absolute; left: 35%" />
 
         <button id="btnGetItNow" style="position: absolute; right: 20%">
-            GET IT <br>NOW!!
+            GET IT <br />NOW!!
         </button>
 
-        <a  style="position: absolute; right: 2%"> Login</a>
-        <a  style="position: absolute; right: 6%"> Sign Up</a>
+        <a style="position: absolute; right: 2%"> Login</a>
+        <a style="position: absolute; right: 6%"> Sign Up</a>
     </header>
-
 
     <!-- sideBar ám chỉ thanh điều hướng theo dạng dọc trong một trang web -->
     <aside id="sidebar">
         <nav>
-            <a href="#">MOBA</a> 
-            <a href="#">Adventure</a> 
-            <a href="#">RPG</a> 
+            <a href="#">MOBA</a>
+            <a href="#">Adventure</a>
+            <a href="#">RPG</a>
             <a href="#">Tower Defense</a>
             <a href="#">Racing</a>
             <a href="#">Team Sport</a>
@@ -147,62 +169,57 @@
         </nav>
     </aside>
 
-
-
     <main id="mainContent">
-        ý tưởng: hover vô sản phẩm, chạy demo sản phẩm đó
-        tương tự như youtube
 
-        . 
-        <br>
+        <div class="glider-contain" style="margin-top: 1em;">
+            <div class="glider">
+                <div>
+                    <img src="/photos/crazy1.jpg" />
+                </div>
+                <div>
+                    <img src="/photos/crazy2.jpg" />
+                </div>
+                <div>
+                    <img src="/photos/crazy3.jpg" />
+                </div>
+            </div>
 
-        có slider chạy các event thu hút người dùng
+            <button aria-label="Previous" class="glider-prev">«</button>
+            <button aria-label="Next" class="glider-next">»</button>
+            <div id="dots"></div>
+        </div>
 
-        <pre>
-            b 
-            sdf
-            <br>    b 
-            sdf
-            <br>    b 
-            sdf
-            <br>    b 
-            sdf
-            <br>    b 
-            sdf
-            <br>    b 
-            sdf
-            <br>    b 
-            sdf
-            <br>    b 
-            sdf
-            <br>    b 
-            sdf
-            <br>    b 
-            sdf
-            <br>    b 
-            sdf
-            <br>    b 
-            sdf
-            <br>    b 
-            sdf
-            <br>    b 
-            sdf
-            <br>    b 
-            sdf
-            <br>    b 
-            sdf
-            <br>    b 
-            sdf
-            <br>
-        </pre>
-        
+
+
     </main>
-   
-    
- 
+
+    <script>
+        window.addEventListener("load", function () {
+            new Glider(document.querySelector(".glider"), {
+                slidesToShow: 1,
+                dots: "#dots",
+                arrows: {
+                    prev: ".glider-prev",
+                    next: ".glider-next",
+                },
+            });
+        });
+
+
+        let buttonDots = document.getElementById("dots").children;
+        console.log(buttonDots)
+
+        let count = 0;
+        setInterval(() => {
+            count = (count + 1) % buttonDots.length;
+            buttonDots[count].click();
+        }
+            , 4000)
+
+
+    </script>
+
 
 </body>
-
-
 
 </html>
