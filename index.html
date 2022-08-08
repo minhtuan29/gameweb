@@ -158,12 +158,15 @@
         <img src="/photos/pokemon.png" style="width: 6em; height: 2em; position: absolute; left: 3%" />
 
         <a href="https://www.youtube.com/watch?v=8fTBReDCkLg" target="_blank"
-            style="position: absolute; left: 15%; bottom: 1px">
-            <img src="/photos/youtube-icon.png" style="height: 2.3em; width:max-content">
+            style="position: absolute; left: 15%; bottom: 9px">
+            <img src="/photos/youtube-icon.png" style="height: 2.1em; width:max-content">
         </a>
 
 
         <input type="text" id="searchInput" style="position: absolute; left: 35%" />
+
+        <button id="btnAudio" style="position: absolute; right: 28%"> <img src="photos/music.png"
+                style="height: 2em; width: 2.5em;"></button>
 
         <button id="btnGetItNow" style="position: absolute; right: 20%">
             GET IT <br />NOW!!
@@ -231,7 +234,18 @@
 
         let myAudio = new Audio('/mp3/crazycake.mp3');
         myAudio.volume = 0.5;
-        document.addEventListener("mousemove", () => myAudio.play())
+        let isOnAudio = true;
+        document.getElementById("btnAudio").onclick = () => {
+            isOnAudio = !isOnAudio;
+            if (isOnAudio) {
+                myAudio.play();
+            } else {
+                myAudio.pause();
+                myAudio.currentTime = 0;
+            }
+        }
+
+
 
 
 
