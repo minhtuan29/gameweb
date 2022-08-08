@@ -147,7 +147,13 @@
     }
 </style>
 
+
+
+
+
+
 <body>
+
     <header>
         <img src="/photos/pokemon.png" style="width: 6em; height: 2em; position: absolute; left: 3%" />
 
@@ -222,16 +228,23 @@
 
 
     <script>
-        window.addEventListener("load", function () {
-            new Glider(document.querySelector(".glider"), {
-                slidesToShow: 1,
-                dots: "#dots",
-                arrows: {
-                    prev: ".glider-prev",
-                    next: ".glider-next",
-                },
-            });
+
+        let myAudio = new Audio('/mp3/crazycake.mp3');
+        myAudio.volume = 0.6;
+        let play = () => myAudio.play();
+        setTimeout(play, 1000);
+
+
+
+        new Glider(document.querySelector(".glider"), {
+            slidesToShow: 1,
+            dots: "#dots",
+            arrows: {
+                prev: ".glider-prev",
+                next: ".glider-next",
+            },
         });
+
 
 
         let buttonDots = document.getElementById("dots").children;
@@ -241,6 +254,7 @@
             count = (count + 1) % buttonDots.length;
             buttonDots[count].click();
         }, 4000)
+
 
 
     </script>
