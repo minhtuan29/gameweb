@@ -149,7 +149,7 @@
     #flexContainer {
         display: flex;
         flex-wrap: wrap;
-        gap: 1em 3em;
+        gap: 1.5em 3em;
     }
 
     .flexItem img {
@@ -161,6 +161,19 @@
         border: solid 2px lightslategray;
         padding: .5em;
         border-radius: .8em;
+
+    }
+
+    .flexItem img:hover {
+        transform: scale(1.1, 1.07);
+        border-radius: 5px;
+    }
+
+    .flexItem:hover {
+        border-color: aqua;
+        transform: scale(1.1, 1.1);
+        transition: .2s ease;
+
     }
 </style>
 
