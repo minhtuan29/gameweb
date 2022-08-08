@@ -8,13 +8,17 @@
     <link rel="stylesheet" href="/css/general.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
-    <title>Document</title>
+    <link rel="icon" type="image/x-icon"
+        href="https://cdn.icon-icons.com/icons2/41/PNG/128/radiant_game_android_6960.png">
+
+    <title>Minh Tuấn Cyber</title>
 </head>
 
 <style>
     body {
         background-color: rgb(26, 26, 26);
         font-size: 20px;
+        color: white;
     }
 
     a {
@@ -146,6 +150,14 @@
 <body>
     <header>
         <img src="/photos/pokemon.png" style="width: 6em; height: 2em; position: absolute; left: 3%" />
+
+        <a href="https://www.youtube.com/channel/UCEZ11BfdWpcOAbA86im7nFw/featured"
+            style="position: absolute; left: 15%; bottom: 1px">
+            <img src="https://cdn.icon-icons.com/icons2/792/PNG/512/YOUTUBE_icon-icons.com_65537.png"
+                style="height: 2.3em; width:max-content">
+        </a>
+
+
         <input type="text" id="searchInput" style="position: absolute; left: 35%" />
 
         <button id="btnGetItNow" style="position: absolute; right: 20%">
@@ -153,7 +165,7 @@
         </button>
 
         <a style="position: absolute; right: 2%"> Login</a>
-        <a style="position: absolute; right: 6%"> Sign Up</a>
+        <a style="position: absolute; right: 7%"> Sign Up</a>
     </header>
 
     <!-- sideBar ám chỉ thanh điều hướng theo dạng dọc trong một trang web -->
@@ -168,6 +180,9 @@
             <a href="#">Casual</a>
         </nav>
     </aside>
+
+
+
 
     <main id="mainContent">
 
@@ -189,9 +204,23 @@
             <div id="dots"></div>
         </div>
 
+        <hr size="5px" color="black" style="margin-top: 2em; margin-bottom: 1em;">
+
+        <div>
+            <img src="/text in img/trendding.png" style="transform: scale(0.5, 0.5); margin-left: -3em;">
+        </div>
+
 
 
     </main>
+
+
+
+
+
+
+
+
 
     <script>
         window.addEventListener("load", function () {
@@ -207,18 +236,15 @@
 
 
         let buttonDots = document.getElementById("dots").children;
-        console.log(buttonDots)
-
         let count = 0;
+
         setInterval(() => {
             count = (count + 1) % buttonDots.length;
             buttonDots[count].click();
-        }
-            , 4000)
+        }, 4000)
 
 
     </script>
-
 
 </body>
 
