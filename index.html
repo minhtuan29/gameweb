@@ -230,9 +230,10 @@
     <script>
 
         let myAudio = new Audio('/mp3/crazycake.mp3');
-        myAudio.volume = 0.6;
-        let play = () => myAudio.play();
-        setTimeout(play, 1000);
+        myAudio.volume = 0.5;
+        document.addEventListener("mousemove", () => myAudio.play())
+
+
 
 
 
