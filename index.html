@@ -171,6 +171,8 @@
 
 <body>
 
+    <img id="pikachuGif" src="/gif/pikachu.gif" style="position: fixed; z-index: 200; top: 8em; right: -1em;">
+
     <header>
         <img src="/photos/pokemon.png" style="width: 6em; height: 2em; position: absolute; left: 3%" />
 
@@ -340,7 +342,18 @@
         }
 
 
+        let pikachuGif = document.getElementById("pikachuGif");
+        setTimeout(() => {
+            pikachuGif.style.display = "none";
+        }, 0)
 
+        setTimeout(() => {
+            pikachuGif.style.display = "block";
+        }, 1000)
+
+        setTimeout(() => {
+            pikachuGif.style.display = "none";
+        }, 2800)
 
 
 
