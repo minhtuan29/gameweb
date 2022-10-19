@@ -1,1 +1,288 @@
-const _0x222e7=_0x224e;(function(_0x377eda,_0x129903){const _0x1537cc=_0x224e,_0x1daa8a=_0x377eda();while(!![]){try{const _0x5d9689=parseInt(_0x1537cc(0x1e0))/0x1+-parseInt(_0x1537cc(0x1c7))/0x2*(-parseInt(_0x1537cc(0x1ba))/0x3)+parseInt(_0x1537cc(0x1c3))/0x4*(-parseInt(_0x1537cc(0x1f6))/0x5)+-parseInt(_0x1537cc(0x1f2))/0x6+parseInt(_0x1537cc(0x1b5))/0x7*(-parseInt(_0x1537cc(0x1ea))/0x8)+-parseInt(_0x1537cc(0x1ee))/0x9*(-parseInt(_0x1537cc(0x1d2))/0xa)+parseInt(_0x1537cc(0x1d7))/0xb*(parseInt(_0x1537cc(0x1d0))/0xc);if(_0x5d9689===_0x129903)break;else _0x1daa8a['push'](_0x1daa8a['shift']());}catch(_0x407384){_0x1daa8a['push'](_0x1daa8a['shift']());}}}(_0x5a8a,0xa5d01));function _0x224e(_0x410768,_0x5d2d76){const _0x5a8ac7=_0x5a8a();return _0x224e=function(_0x224edc,_0x395b6b){_0x224edc=_0x224edc-0x1b5;let _0x9a730f=_0x5a8ac7[_0x224edc];return _0x9a730f;},_0x224e(_0x410768,_0x5d2d76);}let musicIdx=0x0,musicArr=[new Audio(_0x222e7(0x1ed)),new Audio(_0x222e7(0x1c1)),new Audio(_0x222e7(0x1c9)),new Audio(_0x222e7(0x1bd)),new Audio('/music/b1_.mp3')],myAudio=musicArr[musicIdx],isOnAudio=![];document['getElementById'](_0x222e7(0x1e9))[_0x222e7(0x1d4)]=()=>{const _0x1f8bae=_0x222e7;isOnAudio=!isOnAudio;if(isOnAudio){if(musicIdx>0x4)musicIdx=0x0;myAudio=musicArr[musicIdx++],myAudio[_0x1f8bae(0x1b9)](),myAudio[_0x1f8bae(0x1e4)](_0x1f8bae(0x1b8),()=>{const _0x11f2e3=_0x1f8bae;myAudio[_0x11f2e3(0x1d8)]=0x0,myAudio['pause']();if(musicIdx>0x4)musicIdx=0x0;myAudio=musicArr[musicIdx++],myAudio['play'](),isOnAudio=!![];});}else myAudio[_0x1f8bae(0x1e1)](),myAudio['currentTime']=0x0;};let pikachuGif=document[_0x222e7(0x1e6)](_0x222e7(0x1cb));setTimeout(()=>{const _0x418452=_0x222e7;pikachuGif[_0x418452(0x1f8)][_0x418452(0x1cf)]=_0x418452(0x1dc);},0x0),setTimeout(()=>{const _0x146493=_0x222e7;pikachuGif[_0x146493(0x1f8)][_0x146493(0x1cf)]=_0x146493(0x1e2);},0x3e8),setTimeout(()=>{const _0x4a50d5=_0x222e7;pikachuGif[_0x4a50d5(0x1f8)][_0x4a50d5(0x1cf)]=_0x4a50d5(0x1dc);},0xaf0);let copyrightMsg=document[_0x222e7(0x1e6)](_0x222e7(0x1f5));setTimeout(()=>{const _0x42489e=_0x222e7;copyrightMsg[_0x42489e(0x1f8)][_0x42489e(0x1cf)]=_0x42489e(0x1dc);},0x0),setTimeout(()=>{const _0x364a07=_0x222e7;copyrightMsg[_0x364a07(0x1f8)][_0x364a07(0x1cf)]=_0x364a07(0x1e2);},0xd48),setTimeout(()=>{const _0x284d6d=_0x222e7;copyrightMsg[_0x284d6d(0x1f8)]['display']=_0x284d6d(0x1dc);},0x2710),new Glider(document['querySelector'](_0x222e7(0x1be)),{'slidesToShow':0x1,'dots':_0x222e7(0x1c2),'arrows':{'prev':_0x222e7(0x1e7),'next':_0x222e7(0x1ce)}});let buttonDots=document[_0x222e7(0x1e6)](_0x222e7(0x1f7))[_0x222e7(0x1d6)],count=0x0;setInterval(()=>{const _0x1ae418=_0x222e7;count=(count+0x1)%buttonDots['length'],buttonDots[count][_0x1ae418(0x1e3)]();},0xfa0);let youtube=document[_0x222e7(0x1e6)](_0x222e7(0x1d3)),msgSlide=document[_0x222e7(0x1e6)](_0x222e7(0x1da));youtube[_0x222e7(0x1d4)]=()=>{const _0xf36a9a=_0x222e7;sessionStorage[_0xf36a9a(0x1db)]('visitedYoutube',!![]),msgSlide[_0xf36a9a(0x1b6)]='Thanks\x20for\x20visiting\x20my\x20Youtube\x20channel.\x20You\x20are\x20a\x20vip\x20member\x20now\x20<3';};sessionStorage[_0x222e7(0x1c0)]('visitedYoutube')&&(msgSlide[_0x222e7(0x1b6)]=_0x222e7(0x1f9));let sliderImg=document[_0x222e7(0x1e6)](_0x222e7(0x1c8)),openGamePikachu=()=>{const _0x242df8=_0x222e7;sliderImg[_0x242df8(0x1dd)]='<iframe\x20id=\x22game\x22\x20src=\x22https://krongkmar.com/pikachu/\x22\x20scrolling=no\x20allowfullscreen=true\x20style=\x22height:630px;width:1000px;\x20border:\x20none;\x22></iframe>',window[_0x242df8(0x1c6)](0x0,0x0);},openGameBlood=()=>{const _0x1cf73e=_0x222e7;sliderImg['innerHTML']=_0x1cf73e(0x1bf),window[_0x1cf73e(0x1c6)](0x0,0x0),setTimeout(()=>{const _0xb7e35a=_0x1cf73e;gameTutorialBtn[_0xb7e35a(0x1f8)][_0xb7e35a(0x1cf)]='block';},0x3e8),gameTutorialLink['href']=_0x1cf73e(0x1fb);},openGameHoxe=()=>{const _0x18f26b=_0x222e7;sliderImg['innerHTML']='<iframe\x20src=\x22https://www.retrogames.cc/embed/8038-cadillacs-dinosaurs-930201-usa.html\x22\x20width=\x22900\x22\x20height=\x22600\x22\x20frameborder=\x22no\x22\x20allowfullscreen=\x22true\x22\x20webkitallowfullscreen=\x22true\x22\x20mozallowfullscreen=\x22true\x22\x20scrolling=\x22no\x22></iframe>',window[_0x18f26b(0x1c6)](0x0,0x0),setTimeout(()=>{const _0x3f262a=_0x18f26b;gameTutorialBtn[_0x3f262a(0x1f8)]['display']=_0x3f262a(0x1e2);},0x3e8),gameTutorialLink[_0x18f26b(0x1bc)]=_0x18f26b(0x1ca);},openMeltalSlug=()=>{const _0x99e077=_0x222e7;sliderImg['innerHTML']=_0x99e077(0x1cc),window[_0x99e077(0x1c6)](0x0,0x0),setTimeout(()=>{const _0x493648=_0x99e077;gameTutorialBtn[_0x493648(0x1f8)][_0x493648(0x1cf)]=_0x493648(0x1e2);},0x3e8),gameTutorialLink[_0x99e077(0x1bc)]='/gametutorial/metal3.html';},openRacing=()=>{const _0x54762a=_0x222e7;sliderImg[_0x54762a(0x1dd)]='<iframe\x20width=\x221100\x22\x20height=\x22700\x22\x20src=\x22https://www.addictinggames.com/embed/html5-games/25031\x22\x20scrolling=\x22no\x22></iframe>',window['scrollTo'](0x0,0x0),setTimeout(()=>{const _0x5cc088=_0x54762a;gameTutorialBtn[_0x5cc088(0x1f8)][_0x5cc088(0x1cf)]=_0x5cc088(0x1e2);},0x3e8),gameTutorialLink[_0x54762a(0x1bc)]=_0x54762a(0x1d5);},openRPG=()=>{const _0x4d6b87=_0x222e7;sliderImg[_0x4d6b87(0x1dd)]=_0x4d6b87(0x1ef),window['scrollTo'](0x0,0x0);},openTowerDefen=()=>{const _0x3ab5b4=_0x222e7;sliderImg['innerHTML']=_0x3ab5b4(0x1fa),window[_0x3ab5b4(0x1c6)](0x0,0x0);},nav=document[_0x222e7(0x1cd)]('nav'),menuItems=nav[0x0]['childNodes'];menuItems[0x1][_0x222e7(0x1d4)]=openGameBlood,menuItems[0x3][_0x222e7(0x1d4)]=openMeltalSlug,menuItems[0x5]['onclick']=openRPG,menuItems[0x7][_0x222e7(0x1d4)]=openTowerDefen,menuItems[0x9][_0x222e7(0x1d4)]=openRacing,menuItems[0xb][_0x222e7(0x1d4)]=openGameHoxe,menuItems[0xd]['onclick']=openGamePikachu,setTimeout(()=>msgSlide[_0x222e7(0x1f8)][_0x222e7(0x1cf)]=_0x222e7(0x1dc),0x4e20);let btnSubcribed=document[_0x222e7(0x1e6)]('subcribed');btnSubcribed[_0x222e7(0x1f8)][_0x222e7(0x1cf)]=_0x222e7(0x1dc),btnSubcribed['onclick']=()=>{const _0x32df3e=_0x222e7;localStorage['setItem'](_0x32df3e(0x1de),!![]),btnSubcribed['style']['display']=_0x32df3e(0x1dc);};localStorage[_0x222e7(0x1c0)](_0x222e7(0x1de))===null&&(setTimeout(()=>btnSubcribed[_0x222e7(0x1f8)][_0x222e7(0x1cf)]=_0x222e7(0x1e2),0x2710),setTimeout(openPopup,0x2af8));function openGame(_0x26f24f){const _0x25b273=_0x222e7;sliderImg[_0x25b273(0x1dd)]=_0x26f24f,window[_0x25b273(0x1c6)](0x0,0x0);}function linkGame(_0x5ac8e2,_0x481475,_0x43d7c2){document['getElementById'](_0x5ac8e2)['onclick']=()=>{const _0x5e9f20=_0x224e;openGame(_0x481475),_0x43d7c2&&(setTimeout(()=>{gameTutorialBtn['style']['display']='block';},0x3e8),gameTutorialLink[_0x5e9f20(0x1bc)]='/gametutorial/'+_0x43d7c2+'.html');};}function _0x5a8a(){const _0x1b383a=['/music/b5_1.mp3','#dots','32tIUDTs','show','gameMario','scrollTo','241174xEgpyU','sliderImg','/music/b2_1.mp3','/gametutorial/hoxe.html','pikachuGif','<iframe\x20src=\x22https://www.retrogames.cc/embed/9160-metal-slug-3-ngm-2560.html\x22\x20width=\x22900\x22\x20height=\x22600\x22\x20frameborder=\x22no\x22\x20allowfullscreen=\x22true\x22\x20webkitallowfullscreen=\x22true\x22\x20mozallowfullscreen=\x22true\x22\x20scrolling=\x22no\x22></iframe>','getElementsByTagName','.glider-next','display','948fiXbBX','remove','475230DdDtnQ','youtube','onclick','/gametutorial/racing1.html','children','136576bncSFy','currentTime','gameMetalSlugX','msgSlide','setItem','none','innerHTML','subcribed','gameFPS1','812506jcbGBP','pause','block','click','addEventListener','removeBtnGameTuto','getElementById','.glider-prev','<iframe\x20src=\x22https://www.retrogames.cc/embed/42845-super-mario-all-stars-nes.html\x22\x20width=\x22800\x22\x20height=\x22600\x22\x20frameborder=\x22no\x22\x20allowfullscreen=\x22true\x22\x20webkitallowfullscreen=\x22true\x22\x20mozallowfullscreen=\x22true\x22\x20scrolling=\x22no\x22></iframe>','btnAudio','8oiHyZV','classList','metal3','/music/b4_1.mp3','135WQhJGq','<iframe\x20style=\x22width:1100px;\x20height:\x20690px;\x20border:\x20none;\x22\x20scrolling=no\x20allowfullscreen=true\x20frameborder=no\x20src=\x22https://www.addictinggames.com/embed/html5-games/25138\x22></iframe>','<iframe\x20src=\x22https://www.retrogames.cc/embed/9170-metal-slug-x-super-vehicle-001-ngm-2500-ngh-2500.html\x22\x20width=\x22800\x22\x20height=\x22600\x22\x20frameborder=\x22no\x22\x20allowfullscreen=\x22true\x22\x20webkitallowfullscreen=\x22true\x22\x20mozallowfullscreen=\x22true\x22\x20scrolling=\x22no\x22></iframe>','add','6346200NdWuSV','gameTutorialBtn','fps1','copyrightMsg','550280TUZgUa','dots','style','Thanks\x20for\x20visiting\x20my\x20Youtube\x20Channel.\x20You\x20are\x20a\x20vip\x20member\x20now\x20<3','<iframe\x20width=\x221000px\x22\x20height=\x22650px\x22\x20src=\x22https://www.addictinggames.com/embed/html5-games/23830\x22\x20scrolling=\x22no\x22></iframe>','/gametutorial/bloodyroar.html','8507485vmVHnY','innerText','popup','ended','play','33TwNzFM','mario','href','/music/b3_1.mp3','.glider','<iframe\x20src=\x22https://www.retrogames.cc/embed/41623-bloody-roar-2-bringer-of-new-age.html\x22\x20width=\x221000\x22\x20height=\x22675\x22\x20frameborder=\x22no\x22\x20allowfullscreen=\x22true\x22\x20webkitallowfullscreen=\x22true\x22\x20mozallowfullscreen=\x22true\x22\x20scrolling=\x22no\x22></iframe>','getItem'];_0x5a8a=function(){return _0x1b383a;};return _0x5a8a();}linkGame(_0x222e7(0x1df),'<iframe\x20src=\x22https://venge.io\x22\x20width=\x221190\x22\x20height=\x22670\x22\x20scrolling=\x22none\x22\x20frameborder=\x220\x22></iframe>',_0x222e7(0x1f4)),linkGame(_0x222e7(0x1d9),_0x222e7(0x1f0),_0x222e7(0x1ec)),linkGame(_0x222e7(0x1c5),_0x222e7(0x1e8),_0x222e7(0x1bb));let gameTutorialBtn=document[_0x222e7(0x1e6)](_0x222e7(0x1f3)),gameTutorialLink=document[_0x222e7(0x1e6)]('gameTutorialLink');gameTutorialBtn[_0x222e7(0x1f8)][_0x222e7(0x1cf)]=_0x222e7(0x1dc),gameTutorialLink[_0x222e7(0x1d4)]=()=>{const _0x312be8=_0x222e7;gameTutorialBtn[_0x312be8(0x1f8)]['display']='none';},document[_0x222e7(0x1e6)](_0x222e7(0x1e5))[_0x222e7(0x1e4)](_0x222e7(0x1e3),()=>{const _0x26566a=_0x222e7;gameTutorialBtn[_0x26566a(0x1f8)][_0x26566a(0x1cf)]=_0x26566a(0x1dc);});let popup=document[_0x222e7(0x1e6)](_0x222e7(0x1b7));function closePopup(){const _0x56d42f=_0x222e7;popup[_0x56d42f(0x1eb)][_0x56d42f(0x1d1)]('show');}function openPopup(){const _0x224a61=_0x222e7;popup['classList'][_0x224a61(0x1f1)](_0x224a61(0x1c4));}document[_0x222e7(0x1e6)]('removePopupBtn')[_0x222e7(0x1e4)](_0x222e7(0x1e3),closePopup);
+
+
+// ========= chỉnh size về dạng chứa content vừa vặn, sau khi load ảnh =======
+setTimeout(() => document.getElementById("sliderImg").style.height = "auto", 1200);
+//=====================================
+
+
+
+
+// ============ chơi nhạc =====================
+let musicIdx = 0;
+let musicArr = [
+new Audio("/music/b4_1.mp3"),
+new Audio("/music/b5_1.mp3"),
+new Audio("/music/b2_1.mp3"),
+new Audio("/music/b3_1.mp3"),
+new Audio("/music/b1_.mp3")
+];
+
+let myAudio = musicArr[musicIdx];
+let isOnAudio = false;
+document.getElementById("btnAudio").onclick = () => {
+    isOnAudio = !isOnAudio;
+    if (isOnAudio) {
+        if(musicIdx > musicArr.length-1) musicIdx = 0;
+        myAudio = musicArr[musicIdx++];
+        myAudio.play();
+        myAudio.addEventListener("ended", ()=>{
+            myAudio.currentTime = 0;
+            myAudio.pause();
+            
+            if(musicIdx >4) musicIdx = 0;
+            myAudio = musicArr[musicIdx++];
+            myAudio.play();
+            isOnAudio = true;
+        })
+    } else {
+        myAudio.pause();
+        myAudio.currentTime = 0;
+    }
+}
+//================================================
+
+
+
+
+
+//=======================================
+let pikachuGif = document.getElementById("pikachuGif");
+setTimeout(() => {
+    pikachuGif.style.display = "block";
+}, 1000)
+
+setTimeout(() => {
+    pikachuGif.style.display = "none";
+}, 2800)
+//============================================
+
+
+
+
+//===============  Thông báo đừng copy bản quyền =================================
+let copyrightMsg = document.getElementById("copyrightMsg");
+
+setTimeout(() => {
+    copyrightMsg.style.display = "block";
+}, 3400)
+
+setTimeout(() => {
+    copyrightMsg.style.display = "none";
+}, 10000)
+//==============================================================
+
+
+
+
+//============ tắt slide chữ ============
+setTimeout(() => msgSlide.style.display = "none", 20000)
+
+
+
+
+
+//===============Chạy Slide Ảnh=============================
+new Glider(document.querySelector(".glider"), {
+    slidesToShow: 1,
+    dots: "#dots",
+    arrows: {
+        prev: ".glider-prev",
+        next: ".glider-next",
+    },
+});
+
+
+let buttonDots = document.getElementById("dots").children;
+let count = 0;
+
+setInterval(() => {
+    count = (count + 1) % buttonDots.length;
+    buttonDots[count].click();
+}, 4000)
+//====================================================
+
+
+
+
+
+
+
+
+
+
+// ==========Chức năng session cho youtube==============
+let youtube = document.getElementById("youtube");
+let msgSlide = document.getElementById("msgSlide");
+youtube.onclick = () => {
+    sessionStorage.setItem("visitedYoutube", true);
+    msgSlide.innerText = "Thanks for visiting my Youtube channel. You are a vip member now <3";
+}
+
+if (sessionStorage.getItem("visitedYoutube")) {
+    msgSlide.innerText = "Thanks for visiting my Youtube Channel. You are a vip member now <3"
+}
+//==========================================================
+
+
+
+
+
+
+
+
+
+
+
+//  =========================== mở game thanh bên =====================
+let sliderImg = document.getElementById("sliderImg");
+
+let openGamePikachu = () => {
+    sliderImg.innerHTML = '<iframe id="game" src="https://krongkmar.com/pikachu/" scrolling=no allowfullscreen=true style="height:630px;width:1000px; border: none;"></iframe>';
+    window.scrollTo(0, 0);
+}
+let openGameBlood = () => {
+    sliderImg.innerHTML = '<iframe src="https://www.retrogames.cc/embed/41623-bloody-roar-2-bringer-of-new-age.html" width="1000" height="675" frameborder="no" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" scrolling="no"></iframe>';
+    window.scrollTo(0, 0);
+    setTimeout(()=>{gameTutorialBtn.style.display = "block"}, 1000)
+    gameTutorialLink.href = "/gametutorial/bloodyroar.html";
+}
+
+let openGameHoxe = () => {
+    sliderImg.innerHTML = '<iframe src="https://www.retrogames.cc/embed/8038-cadillacs-dinosaurs-930201-usa.html" width="900" height="600" frameborder="no" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" scrolling="no"></iframe>';
+    window.scrollTo(0, 0);
+    setTimeout(()=>{gameTutorialBtn.style.display = "block"}, 1000)
+    gameTutorialLink.href = "/gametutorial/hoxe.html";
+}
+
+let openMeltalSlug = () => {
+    sliderImg.innerHTML = '<iframe src="https://www.retrogames.cc/embed/9160-metal-slug-3-ngm-2560.html" width="900" height="600" frameborder="no" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" scrolling="no"></iframe>';
+    window.scrollTo(0, 0);
+    setTimeout(()=>{gameTutorialBtn.style.display = "block"}, 1000)
+    gameTutorialLink.href = "/gametutorial/metal3.html";
+}
+
+let openRacing = () => {
+    sliderImg.innerHTML = '<iframe width="1100" height="700" src="https://www.addictinggames.com/embed/html5-games/25031" scrolling="no"></iframe>';
+    window.scrollTo(0, 0);
+    setTimeout(()=>{gameTutorialBtn.style.display = "block"}, 1000)
+    gameTutorialLink.href = "/gametutorial/racing1.html";
+}
+
+let openRPG = () => {
+    sliderImg.innerHTML = '<iframe style="width:1100px; height: 690px; border: none;" scrolling=no allowfullscreen=true frameborder=no src="https://www.addictinggames.com/embed/html5-games/25138"></iframe>';
+    window.scrollTo(0, 0);
+}
+
+let openTowerDefen = () => {
+    sliderImg.innerHTML = '<iframe width="1000px" height="650px" src="https://www.addictinggames.com/embed/html5-games/23830" scrolling="no"></iframe>';
+    window.scrollTo(0, 0);
+}
+
+let nav = document.getElementsByTagName("nav");
+let menuItems = nav[0].childNodes;
+
+// 1 3 5 7 9 11 13
+menuItems[1].onclick = openGameBlood;
+menuItems[3].onclick = openMeltalSlug;
+menuItems[5].onclick = openRPG;
+menuItems[7].onclick = openTowerDefen;
+menuItems[9].onclick = openRacing;
+menuItems[11].onclick = openGameHoxe;
+menuItems[13].onclick = openGamePikachu;
+//==============================================================================================
+
+
+
+
+
+
+
+// ============ chức năng local store - ghé thăm lần đầu ================
+let btnSubcribed = document.getElementById("subcribed");
+
+btnSubcribed.onclick = () => {
+    localStorage.setItem("subcribed", true);
+    btnSubcribed.style.display = "none";
+}
+
+
+if (localStorage.getItem("subcribed") === null) {
+    setTimeout(() => btnSubcribed.style.display = "block", 10000);
+    setTimeout( openPopup, 11000);
+}
+//==========================================================================
+
+
+
+
+
+
+
+
+
+
+//================== game mở rộng ===============================
+
+function openGame(iframeStr){
+    sliderImg.innerHTML = iframeStr;
+    window.scrollTo(0,0);
+}
+
+
+function linkGame(gameIDStr, iframeStr, usageStrDirect){
+    document.getElementById(gameIDStr).onclick = ()=>{
+        openGame(iframeStr);
+        if(usageStrDirect){
+            setTimeout(()=>{gameTutorialBtn.style.display = "block"}, 1000)
+            gameTutorialLink .href = "/gametutorial/" + usageStrDirect +".html";
+        }
+    }
+}
+
+linkGame("gameFPS1", '<iframe src="https://venge.io" width="1190" height="670" scrolling="none" frameborder="0"></iframe>', 'fps1');
+linkGame("gameMetalSlugX", '<iframe src="https://www.retrogames.cc/embed/9170-metal-slug-x-super-vehicle-001-ngm-2500-ngh-2500.html" width="800" height="600" frameborder="no" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" scrolling="no"></iframe>', 'metal3');
+linkGame("gameMario", '<iframe src="https://www.retrogames.cc/embed/42845-super-mario-all-stars-nes.html" width="800" height="600" frameborder="no" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" scrolling="no"></iframe>', 'mario');
+
+//=================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+// =========== Nút coi Watch Tutorial Game play ==================
+
+let gameTutorialBtn = document.getElementById("gameTutorialBtn");
+let gameTutorialLink = document.getElementById("gameTutorialLink");
+
+gameTutorialLink.onclick = ()=>{
+    gameTutorialBtn.style.display = "none";
+}
+
+document.getElementById("removeBtnGameTuto").addEventListener("click", ()=>{
+    gameTutorialBtn.style.display = "none";
+})
+//=============================================================================
+
+
+
+
+
+
+
+
+//=========== Popup thông báo lần đầu tiên đến trang web =================
+let popup = document.getElementById('popup');
+function closePopup() {
+    popup.classList.remove("show");
+}
+function openPopup() {
+    popup.classList.add('show');
+}
+document.getElementById("removePopupBtn").addEventListener("click", closePopup);
+//==================================================
