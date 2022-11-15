@@ -14,6 +14,20 @@
         color: ghostwhite;
         font-size: 20px;
     }
+
+    input[type=text] {
+        font-size: 20px;
+        width: 8em;
+    }
+
+    button {
+        padding: 2px;
+        padding-top: 6px;
+    }
+
+    button:hover {
+        background-color: aquamarine;
+    }
 </style>
 
 <body>
@@ -42,36 +56,44 @@
         <pre style="padding-left: 20%; text-align: left;">
                 Bạn có thể dùng một vài tài khoản sau đây để chơi
     
-                Tài Khoản : tuan69
-                Mật Khẩu  : 12345678
+                Tài Khoản :  <input type="text" value="tuan69" disabled id="1"><button onclick="myFunction(1, this)" >Copy text</button>
+                Mật Khẩu  :  <input type="text" value="12345678" disabled id="2"><button onclick="myFunction(2, this)">Copy text</button>
 
-                Tài khoản : LGxMAY
-                Mật khẩu  : khang123
+                Tài khoản :  <input type="text" value="LGxMAY"disabled id="3"><button onclick="myFunction(3, this)">Copy text</button>
+                Mật khẩu  :  <input type="text" value="khang123"disabled id="4"><button onclick="myFunction(4, this)">Copy text</button>
 
-                Tài khoản : Namlun
-                Mật khẩu  : Vantam2501123
+                Tài khoản :  <input type="text" value="Namlun"disabled id="5"><button onclick="myFunction(5, this)">Copy text</button>
+                Mật khẩu  :  <input type="text" value="Vantam2501123"disabled id="6"><button onclick="myFunction(6, this)">Copy text</button>
     
-                Tài Khoản : VNxBi1
-                Mật Khẩu  : boomonlinevn
+                Tài Khoản :  <input type="text" value="VNxBi1"disabled id="7"><button onclick="myFunction(7, this)">Copy text</button>
+                Mật Khẩu  :  <input type="text" value="boomonlinevn"disabled id="8"><button onclick="myFunction(8, this)">Copy text</button>
     
-                Tài Khoản : VNxBi2
-                Mật Khẩu  : boomonlinevn
+                Tài Khoản :  <input type="text" value="VNxBi2"disabled id="9"><button onclick="myFunction(9, this)">Copy text</button>
+                Mật Khẩu  :  <input type="text" value="boomonlinevn"disabled id="10"><button onclick="myFunction(10, this)">Copy text</button>
 
-                Tài Khoản : VNxBi3
-                Mật Khẩu  : boomonlinevn
+                Tài Khoản :  <input type="text" value="VNxBi3"disabled id="11"><button onclick="myFunction(11, this)">Copy text</button>
+                Mật Khẩu  :  <input type="text" value="boomonlinevn"disabled id="12"><button onclick="myFunction(12, this)">Copy text</button>
     
-                Tài Khoản : VNxBi4
-                Mật Khẩu  : boomonlinevn
+                Tài Khoản :  <input type="text" value="VNxBi4"disabled id="13"><button onclick="myFunction(13, this)">Copy text</button>
+                Mật Khẩu  :  <input type="text" value="boomonlinevn"disabled id="14"><button onclick="myFunction(14, this)">Copy text</button>
 
-                Tài Khoản : VNxBi5
-                Mật Khẩu  : boomonlinevn
+                Tài Khoản :  <input type="text" value="VNxBi5"disabled id="15"><button onclick="myFunction(15, this)">Copy text</button>
+                Mật Khẩu  :  <input type="text" value="boomonlinevn"disabled id="16"><button onclick="myFunction(16, this)">Copy text</button>
     
-                Tài Khoản : VNxBi6
-                Mật Khẩu  : boomonlinevn
+                Tài Khoản :  <input type="text" value="VNxBi6"disabled id="17"><button onclick="myFunction(17, this)">Copy text</button>
+                Mật Khẩu  :  <input type="text" value="boomonlinevn"disabled id="18"><button onclick="myFunction(18, this)">Copy text</button>
             </pre>
     </div>
 
-
+    <script>
+        let myFunction = (id, btn) => {
+            let copyText = document.getElementById(id);
+            copyText.select();
+            navigator.clipboard.writeText(copyText.value);
+            btn.textContent = '✅ Copy';
+            btn.style.paddingTop = '4px';
+        }
+    </script>
 
 </body>
 
