@@ -241,3 +241,15 @@ button.glider-prev {
 #removePopupBtn:hover {
    scale: 1.2;
 }
+
+
+::-webkit-scrollbar{
+    width: 8px;
+    background-color: dimgray;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(77, 77, 77);
+    border-radius: 600px;
+    border: rgb(154, 171, 171) solid 2px;
+}
