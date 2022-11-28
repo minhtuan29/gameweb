@@ -12,6 +12,8 @@
     <meta property="og:description"
         content="what game today - free online gaming website without downloading. Bloody Roar 2, Metal Slug, Pokemon, FPS, Mario, Cadillacs and Dinosaurs" />
 
+    <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-auth-compat.js"></script>
 
     <title>What Game Today</title>
     <meta property="og:title" content="What Game Today - Thế giới game trong tầm tay" />
@@ -37,6 +39,8 @@
             cursor: url("./svg/banana.svg"), none;
         }
     </style>
+
+    <script src="/firebase.js" type="module" async defer></script>
 
 </head>
 
@@ -122,8 +126,9 @@
             GET IT <br />NOW!!
         </button>
 
-        <a style="position: absolute; right: 2%"> Login</a>
-        <a style="position: absolute; right: 7%"> Sign Up</a>
+        <a id="loginBtn" style="position: absolute; right: 2%"> <img src="/photos/googleicon.png" alt="" height="32px">
+            Login </a>
+
     </header>
 
     <!-- sideBar ám chỉ thanh điều hướng theo chiều dọc trong một trang web -->
@@ -404,7 +409,7 @@
 
 
 
-    <script src="js.js"></script>
+    <script src="js.js" type="module"></script>
 
 
 
@@ -440,6 +445,7 @@
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
     </script>
+
 
 
 </body>
