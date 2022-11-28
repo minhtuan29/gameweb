@@ -320,3 +320,69 @@ function banCaInHorizonOpenFrame(){
     window.scrollTo(0, 300);
     document.getElementById('sliderImg').innerHTML =  '<iframe style="margin-left:20%;transform: rotate(90deg);"  src="https://play.zing.vn/portal?game=ica" frameborder="0" height="1280" width="720"></iframe>';
 }
+
+//============================ firebase auth ================================
+
+import { getAuth, signInWithPopup, signOut, onAuthStateChanged, GoogleAuthProvider } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-auth.js";
+
+const firebaseConfig = {
+    apiKey: "AIzaSyBEtGWeK1T5SQv4jogwS7lhBpU3QdKylbs",
+    authDomain: "minhtuan-2369.firebaseapp.com",
+    projectId: "minhtuan-2369",
+    storageBucket: "minhtuan-2369.appspot.com",
+    messagingSenderId: "263629561617",
+    appId: "1:263629561617:web:d1a4cddb887b143983f6b0"
+};
+
+const app = firebase.initializeApp(firebaseConfig);
+const auth = getAuth(app);
+let googleAuthProvider = new GoogleAuthProvider();
+let loginBtn = document.getElementById("loginBtn");
+
+async function main() {
+
+    let firstContent = loginBtn.innerHTML;
+
+    loginBtn.addEventListener('click', () => {
+        if (auth.currentUser) {
+            signOut(auth);
+        } else {
+            signInWithPopup(auth, googleAuthProvider)
+        }
+    });
+
+
+    onAuthStateChanged(auth, user => {
+        if (user) {
+            let hisNameArr = user.displayName.split(" ").filter(word => { return word.length < 10 });
+            if (hisNameArr.length > 1 && (hisNameArr[0] + hisNameArr[1]).length < 14) {
+                loginBtn.innerHTML = `<img src="${user.photoURL}" style='height:30px; border-radius:20px'> <span style="position:relative; bottom:9px">${hisNameArr[0]} ${hisNameArr[1]} Log Out</span>`;
+            } else {
+                loginBtn.textContent = `<img src="${user.photoURL}" style='height:30px; border-radius:20px'> <span style="position:relative; bottom:9px">${hisNameArr[0]} Log Out</span`;
+            }
+        } else {
+            loginBtn.innerHTML= firstContent;
+        }
+    });
+
+}
+
+
+main();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
