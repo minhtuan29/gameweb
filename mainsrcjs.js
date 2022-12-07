@@ -316,11 +316,14 @@ function showRotateGameBtn(){
     document.getElementById("rotateGameBtn").style.display = "block";
 }
 
-function banCaInHorizonOpenFrame(){
+function banCaInHorizonOpenFrameX(){
     window.scrollTo(0, 300);
     document.getElementById('sliderImg').innerHTML =  '<iframe style="margin-left:20%;transform: rotate(90deg);"  src="https://play.zing.vn/portal?game=ica" frameborder="0" height="1280" width="720"></iframe>';
-}
+};
 
+document.getElementById("banCaHorizonBtn").onclick = ()=>{
+    banCaInHorizonOpenFrameX()
+}
 //============================ firebase auth ================================
 
 import { getAuth, signInWithPopup, signOut, onAuthStateChanged, GoogleAuthProvider } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-auth.js";
